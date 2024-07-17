@@ -66,24 +66,30 @@ const ProductsContainer = styled.main `
 }
 
 .image {
+  border-radius: 10px;
   width: 400px;
 }
 
 .featuredkicks {
+  background-color: #EEEDE7;
+  border-radius: 10px;
   font-size: 15px;
   text-align: center;
   font-family: "Kanit", sans-serif;
+  color: black;
   font-weight: 400;
   font-style: normal;
-  padding: 20px;
+  padding: 50px;
 }
 
 .featuredkicks:hover {
   cursor: pointer;
-  animation: pulse;
-  animation-duration: 2s;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+}
+
+p {
+  font-size: 20px;
 }
 
 button {
@@ -92,19 +98,20 @@ button {
   font-family: "Kanit", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   border: none;
   padding: 8px;
   margin: 10px;
   border-radius: 3px;
+  
 }
 
 button:hover {
   cursor: pointer;
-  background-color: white;
-  color: black;
-  text-decoration: underline;
+  background-color: #2E8BC0;
+  color: white;
+  text-decoration: none;
 }
 
 @media (max-width: 767px) {
