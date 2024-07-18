@@ -27,7 +27,7 @@ app.use(express.static(path.join(__dirname, 'build')));
 app.use('/images', express.static(path.join(__dirname, 'src', 'images')));
 
 app.get('/api/items', (req, res) => {
-  const query = 'SELECT name, description, price, image FROM JCKICKS';
+  const query = 'SELECT name, description, price, image, type FROM JCKICKS';
   connection.query(query, (err, results) => {
     if (err) {
       console.error('Error executing MySQL query:', err);

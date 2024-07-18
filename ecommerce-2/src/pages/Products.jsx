@@ -5,6 +5,7 @@ function Products() {
   const [items, setProducts] = useState([]);
   const [filteredItems, setFilteredItems] = useState([]);
   const [priceFilter, setPriceFilter] = useState("all");
+  const [typeFilter, setTypeFilter] = useState("all");
 
   useEffect(() => {
     fetch("/api/items")
@@ -17,27 +18,38 @@ function Products() {
 
     if (priceFilter !== "all") {
       filtered = filtered.filter((item) => {
-        // Update the condition to match the new option values
         if (priceFilter === "$0.00 - $500.00") return item.price <= 500;
         if (priceFilter === "$500.00 - $1000.00") return item.price > 500 && item.price <= 1000;
-        return true; // Ensure a boolean is always returned
+        return true;
       });
     }
 
+    if (typeFilter !== "all") {
+      filtered = filtered.filter((item) => item.type === typeFilter);
+    }
+
     setFilteredItems(filtered);
-  }, [items, priceFilter]);
+  }, [items, priceFilter, typeFilter]);
 
   return (
     <main>
       <ProductsContainer>
         <h1 className="title">Featured Products</h1>
         <FilterContainer>
-            <label>Price: </label>
+            <label>Filter by Price:</label>
             <select onChange={(e) => setPriceFilter(e.target.value)}>
               <option value="all">All</option>
-              {/* Update option values to match filtering logic */}
               <option value="$0.00 - $500.00">$0.00 - $500.00</option>
               <option value="$500.00 - $1000.00">$500.00 - $1000.00</option>
+            </select>
+            <label>Filter by Type:</label>
+            <select onChange={(e) => setTypeFilter(e.target.value)}>
+              <option value="all">All</option>
+              <option value="Jordan">Jordan</option>
+              <option value="Dunks">Dunks</option>
+              <option value="Yeezy">Yeezy</option>
+              <option value="Response">Response</option>
+              <option value="Forum">Forum</option>
             </select>
         </FilterContainer>
         {renderProducts(filteredItems)}
@@ -47,19 +59,18 @@ function Products() {
 
   function renderProducts(items) {
     return (
-      <>
-        <div className="box">
-          {items.map((item, i) => (
-            <div key={i} className="featuredkicks">
-              <img src={item.image} alt={item.name} className="image" />
-              <h1>{item.name}</h1>
-              <h3>{item.description}</h3>
-              <p>${item.price}</p>
-              <button>Add to Cart</button>
-            </div>
-          ))}
-        </div>
-      </>
+      <div className="box">
+        {items.map((item, i) => (
+          <div key={i} className="featuredkicks">
+            <img src={item.image} alt={item.name} className="image" />
+            <h1>{item.name}</h1>
+            <h3>{item.description}</h3>
+            <p>${item.price}</p>
+            <p className="type">{item.type}</p>
+            <button>Add to Cart</button>
+          </div>
+        ))}
+      </div>
     );
   }
 }
@@ -67,7 +78,6 @@ function Products() {
 export default Products;
 
 const FilterContainer = styled.div`
-
   font-family: "Kanit", sans-serif;
   font-size: 20px;
   color: black;
@@ -137,6 +147,10 @@ const ProductsContainer = styled.main`
 
   p {
     font-size: 20px;
+  }
+
+  .type {
+    display: none;
   }
 
   button {

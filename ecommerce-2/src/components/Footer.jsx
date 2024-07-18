@@ -16,9 +16,9 @@ function Footer() {
           <div class="col-xs-6 col-md-3">
             <h6>Resources</h6>
             <ul class="footer-links">
-              <li><a href="http://scanfcode.com/category/c-language/">Terms of service</a></li>
-              <li><a href="http://scanfcode.com/category/front-end-development/">Refund policy</a></li>
-              <li><a href="http://scanfcode.com/category/back-end-development/">Shipping policy</a></li>
+              <li><a href="/">Terms of service</a></li>
+              <li><a href="/">Refund policy</a></li>
+              <li><a href="/">Shipping policy</a></li>
               <li><a href="https://render.com/">Powered By Render</a></li>
             </ul>
           </div>
@@ -26,10 +26,10 @@ function Footer() {
           <div class="col-xs-6 col-md-3">
             <h6>Quick Links</h6>
             <ul class="footer-links">
-              <li><a href="http://scanfcode.com/about/">Home</a></li>
-              <li><a href="http://scanfcode.com/contact/">Products</a></li>
-              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contact Us</a></li>
-              <li><a href="http://scanfcode.com/privacy-policy/">Cart</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/">Products</a></li>
+              <li><a href="/">Contact Us</a></li>
+              <li><a href="/">Cart</a></li>
             </ul>
           </div>
         </div>
@@ -41,14 +41,6 @@ function Footer() {
             <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by 
          <a href="/">JCKICKS</a>.
             </p>
-          </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="social-icons">
-              <li><a class="facebook" href="/"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="youtube" href="/"><i class="fa-brands fa-youtube"></i></a></li>
-              <li><a class="linkedin" href="/"><i class="fa fa-linkedin"></i></a></li>   
-            </ul>
           </div>
         </div>
       </div>
@@ -118,20 +110,6 @@ const FooterContainer = styled.footer `
 {
   display:inline-block
 }
-.site-footer .social-icons
-{
-  text-align:right
-}
-.site-footer .social-icons a
-{
-  width:40px;
-  height:40px;
-  line-height:40px;
-  margin-left:6px;
-  margin-right:0;
-  border-radius:100%;
-  background-color:#33353d
-}
 .copyright-text
 {
   margin:0
@@ -149,80 +127,9 @@ const FooterContainer = styled.footer `
   {
     padding-bottom:0
   }
-  .site-footer .copyright-text,.site-footer .social-icons
+  .site-footer .copyright-text,.site-footer
   {
     text-align:center
-  }
-}
-.social-icons
-{
-  padding-left:0;
-  margin-bottom:0;
-  list-style:none
-}
-.social-icons li
-{
-  display:inline-block;
-  margin-bottom:4px
-}
-.social-icons li.title
-{
-  margin-right:15px;
-  text-transform:uppercase;
-  color:#96a2b2;
-  font-weight:700;
-  font-size:13px
-}
-.social-icons a{
-  background-color:#eceeef;
-  color:#818a91;
-  font-size:16px;
-  display:inline-block;
-  line-height:44px;
-  width:44px;
-  height:44px;
-  text-align:center;
-  margin-right:8px;
-  border-radius:100%;
-  -webkit-transition:all .2s linear;
-  -o-transition:all .2s linear;
-  transition:all .2s linear
-}
-.social-icons a:active,.social-icons a:focus,.social-icons a:hover
-{
-  color:#fff;
-  background-color:#29aafe
-}
-.social-icons.size-sm a
-{
-  line-height:34px;
-  height:34px;
-  width:34px;
-  font-size:14px
-}
-.social-icons a.facebook:hover
-{
-  background-color:#3b5998
-}
-.social-icons a.twitter:hover
-{
-  background-color:#00aced
-}
-.social-icons a.linkedin:hover
-{
-  background-color:#007bb6
-}
-.social-icons a.dribbble:hover
-{
-  background-color:#ea4c89
-}
-@media (max-width:767px)
-{
-  .social-icons li.title
-  {
-    display:block;
-    margin-right:0;
-    font-weight:600
   }
 }
 

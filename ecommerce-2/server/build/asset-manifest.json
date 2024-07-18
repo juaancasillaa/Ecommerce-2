@@ -1,16 +1,25 @@
 {
   "files": {
     "main.css": "/static/css/main.22246a98.css",
-    "main.js": "/static/js/main.2877a124.js",
+    "main.js": "/static/js/main.8e337e13.js",
+    "static/media/newbred.webp": "/static/media/newbred.10df0b57ee18042ada9e.webp",
+    "static/media/powerpuffblue.webp": "/static/media/powerpuffblue.56310ea51cebe3354dab.webp",
+    "static/media/darkmocha.webp": "/static/media/darkmocha.f75f6eea6cf4787945fc.webp",
+    "static/media/wonderwhite.webp": "/static/media/wonderwhite.5fd84e4f14761bcd4707.webp",
+    "static/media/powerpuffpink.webp": "/static/media/powerpuffpink.1a61396109f9738d8910.webp",
     "static/media/militaryblack.webp": "/static/media/militaryblack.313ff6e274a05919b445.webp",
+    "static/media/powerpuffgreen.webp": "/static/media/powerpuffgreen.d41b4c007a8fe31656ed.webp",
+    "static/media/bbwwhiteforum.webp": "/static/media/bbwwhiteforum.f494d999a4160fa6b00c.webp",
     "static/media/jbalvin.webp": "/static/media/jbalvin.e284d7c617b2cab76f5e.webp",
+    "static/media/saltemarine.webp": "/static/media/saltemarine.da3f682e9e1a6cd09aeb.webp",
     "static/media/ivory.webp": "/static/media/ivory.f319395c15453bde8874.webp",
+    "static/media/olive.webp": "/static/media/olive.84f0541efe0206814220.webp",
     "index.html": "/index.html",
     "main.22246a98.css.map": "/static/css/main.22246a98.css.map",
-    "main.2877a124.js.map": "/static/js/main.2877a124.js.map"
+    "main.8e337e13.js.map": "/static/js/main.8e337e13.js.map"
   },
   "entrypoints": [
     "static/css/main.22246a98.css",
-    "static/js/main.2877a124.js"
+    "static/js/main.8e337e13.js"
   ]
 }

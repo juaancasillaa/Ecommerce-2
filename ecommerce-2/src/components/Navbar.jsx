@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <>
       <nav className='navbar'>
-        <h3 className='logo'>JCKICKS</h3>
+        <Link to='/' className="Home"><h3 className='logo'>JCKICKS</h3></Link>
         <ul className={Mobile ? "nav-links-mobile" : "nav-links"} onClick={() => setMobile(false)}>
           <Link to='/' className='Home'>
             <li>Home</li>
