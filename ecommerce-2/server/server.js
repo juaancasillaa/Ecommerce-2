@@ -9,9 +9,9 @@ const PORT = 5050;
 
 const connection = mysql.createConnection({
     host: 'sql5.freesqldatabase.com',
-    user: 'sql5719308',
-    password: 'kiwrCHZUkg',
-    database: 'sql5719308',
+    user: 'sql5720642',
+    password: 'AGJySUqpfZ',
+    database: 'sql5720642',
     port: 3306
 });
 
