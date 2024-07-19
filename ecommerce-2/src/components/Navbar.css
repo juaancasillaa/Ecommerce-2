@@ -14,7 +14,7 @@ li {
   list-style-type: none;
 }
 .navbar {
-    background-color: black;
+  background-color: black;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -28,6 +28,11 @@ li {
   font-weight: bold;
   color: white;
 }
+
+.logo:hover {
+  color: #2E8BC0;
+}
+
 .nav-links {
   display: flex;
   justify-content: flex-end;
@@ -42,6 +47,12 @@ li {
   cursor: pointer;
   text-transform: capitalize;
 }
+
+li:hover {
+  color: #2E8BC0;
+}
+
+
 .mobile-menu-icon {
   display: none;
 }

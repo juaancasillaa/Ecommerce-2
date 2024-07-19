@@ -13,6 +13,16 @@ import Powerpuffgreen from '../pages/image/powerpuffgreen.webp'
 import Powerpuffpink from '../pages/image/powerpuffpink.webp'
 import Saltemarine from '../pages/image/saltemarine.webp'
 import Wonderwhite from '../pages/image/wonderwhite.webp'
+import Bone from '../pages/image/bone.webp'
+import Canary from '../pages/image/canary.webp'
+import Lowmocha from '../pages/image/lowmocha.webp'
+import Militaryblue from '../pages/image/militaryblue.webp'
+import Onyx from '../pages/image/onyx.webp'
+import SanJuan from '../pages/image/sanjuan.webp'
+import Saturngold from '../pages/image/saturngold.webp'
+import TripleBlack from '../pages/image/tripleblack.webp'
+import WhiteCement from '../pages/image/whitecement.webp'
+
 
 
 function Home() {
@@ -39,6 +49,15 @@ function Home() {
                     <img src={Ivory} alt="ivory" />
                     <img src={Jbalvin} alt="jbalvin" />
                     <img src={MilitaryBlack} alt="military" />
+                    <img src={Bone} alt="bone" />
+                    <img src={Canary} alt="canary" />
+                    <img src={Lowmocha} alt="lowmocha" />
+                    <img src={Militaryblue} alt="militaryblue" />
+                    <img src={Onyx} alt="onyx" />
+                    <img src={SanJuan} alt="sanjuan" />
+                    <img src={Saturngold} alt="saturngold" />
+                    <img src={TripleBlack} alt="tripleblack" />
+                    <img src={WhiteCement} alt="whitecememnt" />
                 </div>
             </div>
 
@@ -173,7 +192,7 @@ button {
   border-radius: 3px;
 }
 
-.btn:hover {
+button:hover {
   cursor: pointer;
   background-color: #2E8BC0;
   color: white;
