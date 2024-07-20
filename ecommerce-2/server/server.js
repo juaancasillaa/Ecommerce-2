@@ -1,9 +1,12 @@
 const express = require('express');
 const mysql = require('mysql2');
 const path = require('path');
+const cors = require('cors');
 
 const app = express();
 
+app.use(cors());
+app.use(express.json()); // Add this middleware to parse JSON
 
 const PORT = 5050;
 
@@ -22,8 +25,8 @@ connection.connect((err) => {
   }
   console.log('Successfully connected to MySQL database.');
 });
-app.use(express.static(path.join(__dirname, 'build')));
 
+app.use(express.static(path.join(__dirname, 'build')));
 app.use('/images', express.static(path.join(__dirname, 'src', 'images')));
 
 app.get('/api/items', (req, res) => {
@@ -38,7 +41,24 @@ app.get('/api/items', (req, res) => {
   });
 });
 
+app.post('/Contact', (req, res) => {
+  const { name, email, phone, subject, message } = req.body;
+  
+  if (!name || !email || !phone || !subject || !message) {
+    return res.status(400).json({ error: 'All fields are required' });
+  }
 
+  const sql = "INSERT INTO ContactMessages (`name`, `email`, `phone`, `subject`, `message`) VALUES (?)";
+  const values = [name, email, phone, subject, message];
+
+  connection.query(sql, [values], (err, data) => {
+    if (err) {
+      console.error('Error executing MySQL query:', err);
+      return res.status(500).json({ error: 'Internal server error' });
+    }
+    return res.status(200).json({ message: 'Form submitted successfully' });
+  });
+});
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);

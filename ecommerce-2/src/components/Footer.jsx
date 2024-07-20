@@ -16,9 +16,9 @@ function Footer() {
           <div class="col-xs-6 col-md-3">
             <h6>Resources</h6>
             <ul class="footer-links">
-              <li><a href="/">Terms of service</a></li>
-              <li><a href="/">Refund policy</a></li>
-              <li><a href="/">Shipping policy</a></li>
+              <li><a href="/Terms">Terms of service</a></li>
+              <li><a href="/Terms">Return policy</a></li>
+              <li><a href="/Terms">Shipping policy</a></li>
               <li><a href="https://render.com/">Powered By Render</a></li>
             </ul>
           </div>
@@ -27,9 +27,9 @@ function Footer() {
             <h6>Quick Links</h6>
             <ul class="footer-links">
               <li><a href="/">Home</a></li>
-              <li><a href="/">Products</a></li>
-              <li><a href="/">Contact Us</a></li>
-              <li><a href="/">Cart</a></li>
+              <li><a href="/Products">Products</a></li>
+              <li><a href="/Contact">Contact Us</a></li>
+              <li><a href="/Cart">Cart</a></li>
             </ul>
           </div>
         </div>
@@ -38,7 +38,7 @@ function Footer() {
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by 
+            <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by  
          <a href="/">JCKICKS</a>.
             </p>
           </div>
