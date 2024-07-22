@@ -1,5 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import MilitaryBlack from '../pages/image/militaryblack.webp'
 import Jbalvin from '../pages/image/jbalvin.webp'
 import Ivory from '../pages/image/ivory.webp'
@@ -49,17 +57,28 @@ function Home() {
                     <img src={Ivory} alt="ivory" />
                     <img src={Jbalvin} alt="jbalvin" />
                     <img src={MilitaryBlack} alt="military" />
-                    <img src={Bone} alt="bone" />
-                    <img src={Canary} alt="canary" />
-                    <img src={Lowmocha} alt="lowmocha" />
-                    <img src={Militaryblue} alt="militaryblue" />
-                    <img src={Onyx} alt="onyx" />
-                    <img src={SanJuan} alt="sanjuan" />
-                    <img src={Saturngold} alt="saturngold" />
-                    <img src={TripleBlack} alt="tripleblack" />
-                    <img src={WhiteCement} alt="whitecememnt" />
                 </div>
             </div>
+
+            <Swiper
+              cssMode={true}
+              navigation={true}
+              pagination={true}
+              mousewheel={true}
+              keyboard={true}
+              modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+              className="mySwiper"
+            >
+              <SwiperSlide><img src={Bone} alt="bone" /></SwiperSlide>
+              <SwiperSlide><img src={Canary} alt="canary" /></SwiperSlide>
+              <SwiperSlide><img src={Lowmocha} alt="lowmocha" /></SwiperSlide>
+              <SwiperSlide><img src={Militaryblue} alt="militaryblue" /></SwiperSlide>
+              <SwiperSlide><img src={Onyx} alt="onyx" /></SwiperSlide>
+              <SwiperSlide><img src={SanJuan} alt="sanjuan" /></SwiperSlide>
+              <SwiperSlide><img src={Saturngold} alt="saturngold" /></SwiperSlide>
+              <SwiperSlide><img src={TripleBlack} alt="tripleblack" /></SwiperSlide>
+              <SwiperSlide><img src={WhiteCement} alt="whitecememnt" /></SwiperSlide>
+            </Swiper>
 
         <section class="section2">
 
@@ -130,6 +149,29 @@ video {
   to {
       translate: calc(-4 * 250px);
   }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 650x;
+  height: 550px;
+  object-fit: cover;
 }
 
 .title{
@@ -213,6 +255,11 @@ button:hover {
   }
 
   .image {
+    width: 300px;
+    height: 200px;
+  }
+
+  img {
     width: 300px;
     height: 200px;
   }
