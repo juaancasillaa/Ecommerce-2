@@ -36,15 +36,13 @@ function Products() {
       <ProductsContainer>
         <h1 className="title">Featured Products</h1>
         <FilterContainer>
-            <label>Filter by Price:</label>
             <select onChange={(e) => setPriceFilter(e.target.value)}>
-              <option value="all">All</option>
+              <option value="all">Filter by Price:</option>
               <option value="$0.00 - $500.00">$0.00 - $500.00</option>
               <option value="$500.00 - $1000.00">$500.00 - $1000.00</option>
             </select>
-            <label>Filter by Type:</label>
             <select onChange={(e) => setTypeFilter(e.target.value)}>
-              <option value="all">All</option>
+              <option value="all">Sort by Brand:</option>
               <option value="Jordan">Jordan</option>
               <option value="Dunks">Dunks</option>
               <option value="Yeezy">Yeezy</option>
@@ -88,10 +86,10 @@ const FilterContainer = styled.div`
 
   select {
     font-family: "Kanit", sans-serif;
-    background-color: #2E8BC0;
+    background-color: #EEEDE7;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: black;
     font-size: 20px;
     cursor: pointer;
   }

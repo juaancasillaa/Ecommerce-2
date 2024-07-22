@@ -4,7 +4,6 @@ import Navbar from './components/Navbar';
 import Products from './pages/Products';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
-import Cart from './pages/Cart';
 import Footer from './components/Footer';
 import Terms from './pages/Terms';
 
@@ -18,7 +17,6 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/Products' element={<Products />} />
             <Route path='/Contact' element={<Contact />} />
-            <Route path='/Cart' element={<Cart />} />
             <Route path='/Terms' element={<Terms />} />
             <Route path="*" element={<Notfound />} />
           </Routes> 
