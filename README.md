@@ -27,3 +27,8 @@ https://github.com/juaancasillaa/Ecommerce-2.git
 
 2. Start the application:
 npm start
+
+3. Render Link:
+https://ecommerce-2-9kn1.onrender.com 
+
+4. Note: Render link is only working when I redeploy because I have the free trial on render.
