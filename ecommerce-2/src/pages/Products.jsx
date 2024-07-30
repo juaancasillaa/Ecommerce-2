@@ -48,6 +48,8 @@ function Products() {
               <option value="Yeezy">Yeezy</option>
               <option value="Response">Response</option>
               <option value="Forum">Forum</option>
+              <option value="AirMax">AirMax</option>
+              <option value="Gazelle">Gazelle</option>
             </select>
         </FilterContainer>
         {renderProducts(filteredItems)}
@@ -113,7 +115,6 @@ const ProductsContainer = styled.main`
   .box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     margin: 50px;
