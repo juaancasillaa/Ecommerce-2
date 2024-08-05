@@ -31,4 +31,4 @@ npm start
 3. Render Link:
 https://ecommerce-2-9kn1.onrender.com 
 
-4. Note: Render link is only working when I redeploy because I have a free instance that will spin down with inactivity, which can delay requests by 50 seconds or more..
+4. Note: Render link is only working when I redeploy because I have a free instance that will spin down with inactivity, which can delay requests by 50 seconds or more.
