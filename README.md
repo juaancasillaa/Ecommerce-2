@@ -14,7 +14,7 @@ Welcome to JCKICKS, your go-to platform for buying and selling mainstream and pr
 - **Responsive Design**: Enjoy a seamless shopping experience across desktop, tablet, and mobile devices.
 - **Navigation Bar & Footer**: Navigate effortlessly through our site, with quick access to social media links.
 
-## Features
+## Tech Stack:
 
 - **React**: Use React to structure my website.
 - **Node.js**: Use Node.js to create my server and connect my front-end with my back-end and back-end with my database.
